@@ -1,0 +1,13 @@
+(footprint "Pad" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (fp_text reference "VMOD" (at 0 1.5 unlocked) (layer "F.SilkS")
+      (effects (font (size 0.508 0.508) (thickness 0.254) bold) (justify left bottom))
+    (tstamp ccab5bc5-aa40-4f89-8022-2c57b5484aa0)
+  )
+  (fp_text value "Testpoint" (at -2 -2.54 -90 unlocked) (layer "F.SilkS") hide
+      (effects (font (size 0.635 0.635) (thickness 0.254) bold) (justify left bottom))
+    (tstamp 65bccff0-5a16-4c1f-be22-5a1db6824f32)
+  )
+  (pad "1" thru_hole circle (at 0 0) (size 1.5 1.5) (drill 0.9) (layers "*.Cu" "*.Mask")
+    (solder_mask_margin 0.1016) (tstamp 9b682bcf-a98b-4293-94ef-40c8e037e401))
+)
