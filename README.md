@@ -44,3 +44,19 @@ The render view in KiCad is handy to check the layout looks sane and makes sense
 A picture of a nearly final prototype up and running:
 ![Tracker running with display showing status](images/running.jpg)
 
+## Build Notes
+The build is a single sided board so quite straightforward to manufacture, although there are a few options to make it simpler.
+
+Firstly optional parts, the fuel gauge can be omitted just skip U4 and C17, the pull-ups are still needed though for working I2C.
+Similarly the temperature sensor can be skipped, omit U10 and C35.
+The flash isn't absolutely necessary, but it's an easy to solder part and it's really quite useful.
+The entire charge circuit can be omitted if preferred and the battery charged externally, but again these aren't complicated parts to solder. 
+
+![Charge closeup with green highlighted parts](images/charge.png)
+Just skip the parts marked in green and connect VBAT_IN to VBAT_OUT (in red)
+
+### Difficult parts
+Next up, difficult parts to solder.... the fuel gauge U4, and the ESD's U2 and U5 have very close contacts, these can bridge even with hotplate soldering so need inspecting although the pins can be easily fixed with the touch of a fine soldering iron since the pins are visible at the edges. Similary the USB-C socket can be trouble and needs inspection.
+
+### Soldering
+It's a good idea to use low temperature solder since a full temperature reflow will also reflow the internals of the BG96 and Holyiot modules. Another possibility would be to get the board manufactured by someone else (or flowed yourself) in two stages, initially just all the components *except* the two modules using standard temperature solder. Then after the board is manufactured, apply low temp paste for the BG96 and Holyiot for a second low-temp reflow.
