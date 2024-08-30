@@ -71,4 +71,4 @@ It's a good idea to use low temperature solder since a full temperature reflow w
 ### Software
 As a starting point the software for the "RAKtrack" can be used after changing the pin numbers (the Pin numbers for v3 are in [gpiopins.h](gpiopins.h)). When the IVRtrack code is polished I'll update and add to this github also. 
 
-For RAK track, the website server software is here. and the firmware for the rak board is here.
+For RAK track, the website server software is [here](https://github.com/ihewitt/gps-server). and the firmware for the rak board is [here](https://github.com/ihewitt/raktrack).
